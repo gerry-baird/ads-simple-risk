@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>b0598873-aa60-44e2-a809-ce7b8d760129</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="income">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="income"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="income" typeRef="java.lang.Long"/>
+    </inputData>
+    <decision id="node_1" name="Risk Determination">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="income"/>
+                <input bomType="java.lang.Long" collection="false" name="age"/>
+                <input bomType="java.lang.Long" collection="false" name="loan"/>
+                <output bomType="java.lang.String" collection="false" name="Risk Determination"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/Low.drl" kind="BusinessRule" name="Low"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Risk Determination" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="age">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="age"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="age" typeRef="java.lang.Long"/>
+    </inputData>
+    <inputData id="node_4" name="loan">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Long" collection="false" name="loan"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="loan" typeRef="java.lang.Long"/>
+    </inputData>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

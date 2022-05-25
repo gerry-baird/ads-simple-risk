@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Low</name>
+  <uuid>9a3104c5-b6ab-4470-b90b-2409e5f6e2a8</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if all of the following conditions are true : 
+	- age is at least 40
+    - income is at least 50000
+    - loan is less than 25000
+then set decision to "Low" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

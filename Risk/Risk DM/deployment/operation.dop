@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Risk DM">
+  <name>Risk-DM</name>
+  <uuid>e21bcae5-611d-4762-978d-9353d339f3d4</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#b0598873-aa60-44e2-a809-ce7b8d760129"/>
+  <targetRuleProject href="../../Risk%20DM#f51e52b0-99b1-44a1-a0ff-d01f0690f5bc"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["Risk-DM"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
